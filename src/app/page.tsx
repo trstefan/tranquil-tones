@@ -10,8 +10,8 @@ export default function Home() {
             Sleep Serenade
           </div>
           <div>
-            “Moodlody is an app with nature sounds to help you focus, sleep,
-            relax and relieve stress.”
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            excepturi.
             <ModeToggle />
           </div>
         </div>
