@@ -75,6 +75,16 @@
   }
 }
 
+@layer components {
+  .play-sound {
+    @apply opacity-[.8];
+  }
+
+  .stop-sound {
+    @apply opacity-[1] bg-[rgba(255,255,255,.05)];
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
