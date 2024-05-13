@@ -63,9 +63,9 @@ const SoundsList = ({ sounds }: SoundListType) => {
             <Sound
               key={index}
               {...sound}
-              isPlaying={playingSounds[index]}
-              isMuted={isMuted}
               isActive={currentSoundIndex.includes(index)}
+              isMuted={isMuted}
+              isPlaying={playingSounds[index]}
               onPlay={() =>
                 setPlayingSounds({ ...playingSounds, [index]: true })
               }

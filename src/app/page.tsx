@@ -1,4 +1,3 @@
-import { ModeToggle } from "@/components/Toggle";
 import SoundPanel from "@/components/SoundPanel";
 
 export default function Home() {
@@ -7,12 +6,13 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center gap-[2rem] container">
         <div className="pt-[4rem] text-center">
           <div className="text-[32px] sm:text-[48px] lg:text-[72px] font-bold">
-            Sleep Serenade
+            <h1>Sleep Serenade</h1>
           </div>
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-            excepturi.
-            <ModeToggle />
+            <h2>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              reiciendis.
+            </h2>
           </div>
         </div>
         <div>

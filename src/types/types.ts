@@ -4,7 +4,6 @@ export type SoundType = {
   icon: string;
   isActive: boolean;
   isPlaying: boolean;
-
   isMuted: boolean;
   onPlay: () => void;
   onPause: () => void;
