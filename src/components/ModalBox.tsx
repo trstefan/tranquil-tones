@@ -30,9 +30,9 @@ export const ModalBox = () => {
           </div>
           <div>
             <p className="text-lg font-semibold mb-2">
-              There are lots (and we mean lots!) of relaxing sounds in the
-              world. We’ll add as many as we can and we encourage you to
-              contribute too.
+              There are lots &#40;and we mean lots!&#41; of relaxing sounds in
+              the world. We&apos;ll add as many as we can and we encourage you
+              to contribute too.
             </p>
             <p className="text-lg font-semibold mb-2">
               A few ways you can help make the site more awesome:
@@ -40,7 +40,7 @@ export const ModalBox = () => {
             <ul className="list-disc px-8">
               <li className="mb-2">
                 <p className="text-lg font-medium	">
-                  Send an email to{" "}
+                  Send an email to
                   <span className="italic">lorem@lorem.com</span>
                 </p>
               </li>
