@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { SoundListType } from "@/types/types";
 import { CircleStop, Volume2, VolumeX } from "lucide-react";
-
+import { ModalBox } from "./ModalBox";
 import { Sound } from "./Sound";
 import { Button } from "@/components/ui/button";
 
@@ -45,9 +45,9 @@ const SoundsList = ({ sounds }: SoundListType) => {
           title="Mute/Umnute"
         >
           {isMuted ? (
-            <VolumeX className=" flex justify-center items-center w-[50px] h-[50px] rounded-[50%] hover:bg-[rgba(255,255,255,.05)]" />
+            <VolumeX className=" flex justify-center items-center w-[50px] h-[50px] rounded-[50%]" />
           ) : (
-            <Volume2 className=" flex justify-center items-center w-[50px] h-[50px] rounded-[50%] hover:bg-[rgba(255,255,255,.05)]" />
+            <Volume2 className=" flex justify-center items-center w-[50px] h-[50px] rounded-[50%] " />
           )}
         </Button>
         <Button variant="ghost" size="sm" title="Stop All">
@@ -77,6 +77,7 @@ const SoundsList = ({ sounds }: SoundListType) => {
             />
           );
         })}
+        <ModalBox />
       </div>
     </div>
   );

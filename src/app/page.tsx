@@ -10,8 +10,8 @@ export default function Home() {
           </div>
           <div>
             <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-              reiciendis.
+              Enhance Relaxation, Improve Sleep, and Boost Focus with Soothing
+              Audio
             </h2>
           </div>
         </div>
