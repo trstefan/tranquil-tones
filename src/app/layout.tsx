@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Sleep Serenade",
   description:
-    "Sleep Serenade is an app with nature sounds to help you focus, sleep, relax and relieve stress.",
+    " Enhance Relaxation, Improve Sleep, and Boost Focus with Soothing Audio",
 };
 
 export default function RootLayout({
