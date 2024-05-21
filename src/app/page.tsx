@@ -1,3 +1,4 @@
+import { Pomodoro } from "@/components/Pomodoro";
 import SoundPanel from "@/components/SoundPanel";
 
 export default function Home() {
@@ -15,7 +16,8 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center flex-col items-center	">
+          <Pomodoro />
           <SoundPanel />
         </div>
       </div>

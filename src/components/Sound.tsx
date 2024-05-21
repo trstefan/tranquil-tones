@@ -67,7 +67,7 @@ export const Sound = ({
     audioRef.current && (audioRef.current.volume = value as number);
   };
 
-  console.log(volume);
+  //console.log(volume);
   return (
     <div className="relative">
       <div
