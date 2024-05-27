@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import { CirclePlus } from "lucide-react";
+import Link from "next/link";
 
 export const ModalBox = () => {
   const [open, setOpen] = React.useState(false);
@@ -40,13 +41,25 @@ export const ModalBox = () => {
             <ul className="list-disc px-8">
               <li className="mb-2">
                 <p className="text-lg font-medium	">
-                  Send an email to
-                  <span className="italic">lorem@lorem.com</span>
+                  Send an email to{" "}
+                  <Link
+                    className="text-blue-700 font-bold italic"
+                    href="mailto:stefantraciu20@gmail.com.com"
+                  >
+                    stefantraciu20@gmail.com
+                  </Link>
                 </p>
               </li>
               <li className="mb-2">
                 <p className="text-lg font-medium	">
-                  Contribute code and/or content to Sleep Serenade via GitHub.
+                  Contribute code and/or content to{" "}
+                  <Link
+                    className="text-blue-700 font-bold italic"
+                    href={"https://github.com/trstefan/sleep-serenade"}
+                  >
+                    Sleep Parade
+                  </Link>{" "}
+                  via GitHub.
                 </p>
               </li>
               <li className="mb-2">

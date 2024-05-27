@@ -79,7 +79,7 @@ export const Pomodoro = () => {
           variant={"default"}
           className="bg-white px-8 py-4 rounded-full lowercase  tracking-normal text-center text-base font-semibold text-black"
         >
-          short break
+          long break
         </Button>
       </div>
       <div className="text-center">
