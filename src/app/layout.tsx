@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sleep Serenade",
+  title: "Tranquil Tones",
   description:
     " Enhance Relaxation, Improve Sleep, and Boost Focus with Soothing Audio",
 };

@@ -55,9 +55,9 @@ export const ModalBox = () => {
                   Contribute code and/or content to{" "}
                   <Link
                     className="text-blue-700 font-bold italic"
-                    href={"https://github.com/trstefan/sleep-serenade"}
+                    href={"https://github.com/trstefan/tranquil-tones"}
                   >
-                    Sleep Parade
+                    Tranquil Tones
                   </Link>{" "}
                   via GitHub.
                 </p>

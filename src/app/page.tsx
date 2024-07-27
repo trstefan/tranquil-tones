@@ -7,7 +7,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center gap-[2rem] container">
         <div className="pt-[4rem] text-center">
           <div className="text-[32px] sm:text-[48px] lg:text-[72px] font-bold">
-            <h1>Sleep Serenade</h1>
+            <h1>Tranquil Tones</h1>
           </div>
           <div>
             <h2>
