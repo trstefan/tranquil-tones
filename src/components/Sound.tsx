@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { SoundType } from "@/types/types";
 import { Slider } from "@mui/material";
-
+import { Volume, Volume2 } from "lucide-react";
 export const Sound = ({
   src,
   title,
@@ -76,20 +76,28 @@ export const Sound = ({
           isPlaying ? "stop-sound" : "play-sound"
         }`}
       >
-        <div className="text-white font-bold">{title}</div>
+        <div className="text-2xl font-bold text-white">{title}</div>
         <img src={icon} alt="" className="w-[75px] h-[75px]" />
       </div>
       {isPlaying ? (
-        <Slider
-          defaultValue={0.5}
-          min={0}
-          step={0.01}
-          max={1}
-          onChange={handleVolumeChange}
-          value={volume}
-          aria-label="Volume"
-          className="!absolute !left-1/2 !transform !-translate-x-1/2  !bottom-[20px] !w-[170px] !text-white"
-        />
+        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[20px] w-[200px] flex items-center justify-between gap-3 text-white">
+          <span className="text-sm">
+            <Volume />
+          </span>
+          <Slider
+            value={volume}
+            min={0}
+            step={0.01}
+            max={1}
+            onChange={handleVolumeChange}
+            aria-label="Volume"
+            className="!flex-1 !text-white"
+          />
+          <span className="text-sm">
+            {" "}
+            <Volume2 />
+          </span>
+        </div>
       ) : (
         ""
       )}

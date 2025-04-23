@@ -13,11 +13,11 @@ export const ModalBox = () => {
   return (
     <div className="p-[3rem_5rem] flex justify-center items-center ">
       <Button
-        className="flex flex-col gap-2 text-black font-bold"
+        className="flex flex-col gap-2 text-white font-bold"
         onClick={handleOpen}
       >
         <CirclePlus />
-        Contribute
+        Suggest a Sound
       </Button>
       <Modal
         open={open}
@@ -27,7 +27,9 @@ export const ModalBox = () => {
       >
         <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2 bg-white rounded-lg p-8">
           <div>
-            <h1 className="text-2xl font-bold text-center mb-4">Contribute</h1>
+            <h1 className="font-bold text-2xl text-center mb-4">
+              Contribute to <span className="italic">Tranquil Tones</span>
+            </h1>
           </div>
           <div>
             <p className="text-lg font-semibold mb-2">
@@ -41,12 +43,12 @@ export const ModalBox = () => {
             <ul className="list-disc px-8">
               <li className="mb-2">
                 <p className="text-lg font-medium	">
-                  Send an email to{" "}
+                  Send an email directly to{" "}
                   <Link
                     className="text-blue-700 font-bold italic"
                     href="mailto:stefantraciu20@gmail.com.com"
                   >
-                    stefantraciu20@gmail.com
+                    me
                   </Link>
                 </p>
               </li>

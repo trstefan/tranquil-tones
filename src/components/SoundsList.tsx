@@ -5,6 +5,12 @@ import { CircleStop, Volume2, VolumeX } from "lucide-react";
 import { ModalBox } from "./ModalBox";
 import { Sound } from "./Sound";
 import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const SoundsList = ({ sounds }: SoundListType) => {
   const [currentSoundIndex, setCurrentSoundIndex] = useState<number[]>([]);
@@ -38,24 +44,40 @@ const SoundsList = ({ sounds }: SoundListType) => {
   return (
     <div className="flex flex-col gap-[2rem] justify-center items-center pb-[4rem]">
       <div className="flex gap-[2rem]">
-        <Button
-          variant="ghost"
-          size="sm"
-          onClick={handleMuteUnmute}
-          title="Mute/Umnute"
-        >
-          {isMuted ? (
-            <VolumeX className=" flex justify-center items-center w-[50px] h-[50px] rounded-[50%]" />
-          ) : (
-            <Volume2 className=" flex justify-center items-center w-[50px] h-[50px] rounded-[50%] " />
-          )}
-        </Button>
-        <Button variant="ghost" size="sm" title="Stop All">
-          <CircleStop
-            onClick={stopAll}
-            className=" flex justify-center items-center w-[50px] h-[50px] rounded-[50%] hover:bg-[rgba(255,255,255,.05)]"
-          />
-        </Button>
+        <TooltipProvider delayDuration={0}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                size="default"
+                onClick={handleMuteUnmute}
+                title="Mute/Unmute"
+              >
+                {isMuted ? (
+                  <VolumeX className=" flex justify-center items-center  rounded-[50%]" />
+                ) : (
+                  <Volume2 className=" flex justify-center items-center rounded-[50%] " />
+                )}
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>{isMuted ? "Unmute" : "Mute"}</TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+
+        <TooltipProvider delayDuration={0}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button size="default" title="Stop All">
+                <CircleStop
+                  onClick={stopAll}
+                  className=" flex justify-center items-center  rounded-[50%] hover:bg-[rgba(255,255,255,.05)]"
+                />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Stop all</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </div>
       <div className="grid gap-[2rem] sm:grid-cols-2 lg:grid-cols-4">
         {sounds.map((sound, index) => {
